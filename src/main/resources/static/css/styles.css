@@ -1,0 +1,211 @@
+.toast/* ✅ Global Styling */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 20px;
+    background-color: #f9f9f9;
+}
+/* 👇 Override Bootstrap toast visibility */
+.toast {
+  display: block !important;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  z-index: 9999;
+}
+
+.toast.show {
+  opacity: 1;
+}
+
+
+/* ✅ Image Styling */
+.card-img-top {
+    height: 200px; /* ✅ Fixed height */
+    width: 100%; /* ✅ Full width */
+    object-fit: cover; /* ✅ Maintain aspect ratio without distortion */
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    background-color: #f4f4f4; /* ✅ Background in case image fails to load */
+}
+
+/* ✅ Card Styling */
+.card {
+    transition: transform 0.2s ease;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+/* ✅ Button Styling */
+.btn {
+    transition: background-color 0.2s ease;
+    font-size: 14px;
+    padding: 10px 16px; /* ✅ Added consistent padding */
+}
+
+/* ✅ Fix Button Width Consistency */
+.w-100 {
+    width: 100%; /* ✅ Ensures equal button width */
+}
+
+.btn-warning {
+    background-color: #ffc107;
+    color: #212529;
+    border: none;
+    font-weight: 600;
+}
+
+.btn-warning:hover {
+    background-color: #ffca2c;
+}
+
+.btn-primary {
+    background-color: #0d6efd;
+    color: #fff;
+    border: none;
+    font-weight: 600;
+}
+
+.btn-primary:hover {
+    background-color: #0b5ed7;
+}
+
+/* ✅ Quantity Controls */
+.decrease-btn, .increase-btn {
+    border: 1px solid #ccc;
+    color: #555;
+    transition: background-color 0.2s ease;
+    padding: 6px 12px;
+}
+
+.decrease-btn:hover, .increase-btn:hover {
+    background-color: #f4f4f4;
+}
+
+input[type="number"] {
+    width: 60px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+/* ✅ Badge Styling */
+.badge {
+    font-size: 12px;
+    padding: 5px 10px;
+}
+
+/* ✅ Clean Flexbox Alignment */
+.d-flex {
+    display: flex;
+    align-items: center;
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}
+
+.gap-2 {
+    gap: 8px;
+}
+
+.gap-3 {
+    gap: 12px;
+}
+
+/* ✅ Fix Alignment for Buttons */
+.flex-buttons {
+    display: flex;
+    gap: 12px;
+}
+
+.flex-buttons .btn {
+    flex: 1; /* ✅ Equal width */
+}
+
+/* ✅ Navbar Styling */
+.navbar {
+    padding: 12px 20px;
+    background-color: #343a40;
+}
+
+.nav-link {
+    color: #fff !important;
+    font-size: 16px;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+.nav-link:hover {
+    color: #ffc107 !important;
+}
+
+.dropdown-menu {
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.btn-outline-light {
+    color: #fff;
+    border-color: #fff;
+}
+
+.btn-outline-light:hover {
+    background-color: #fff;
+    color: #343a40;
+}
+
+.btn-warning {
+    color: #343a40;
+    font-weight: 600;
+}
+
+/* ✅ Cart Badge */
+#cartCount {
+    font-size: 12px;
+    padding: 4px 6px;
+    color: #fff;
+}
+
+/* ✅ Improved Spacing for Buttons */
+.mt-3 {
+    margin-top: 16px; /* ✅ More consistent spacing */
+}
+
+.gap-3 {
+    gap: 16px;
+}
+
+/* ✅ Fix Cart Badge */
+#cartCount {
+    font-size: 12px;
+    padding: 4px 6px;
+    color: #fff;
+    background-color: #dc3545;
+    border-radius: 50%;
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    transform: translate(50%, -50%);
+    display: none;
+}
+
+/* ✅ Toast Styling */
+.toast {
+    font-size: 16px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.toast-body {
+    padding: 12px;
+}
+
+.btn-close {
+    filter: invert(1);
+}
